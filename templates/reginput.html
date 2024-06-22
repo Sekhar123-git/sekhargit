@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body   bgcolor="#f08080">
+<form action="./reg/" method="post" >
+    {% csrf_token %}
+    {{ regf }}
+       <input type="submit" value="Register">
+       <input type="reset" value="Cancel">
+</form>
+</body>
+</html>

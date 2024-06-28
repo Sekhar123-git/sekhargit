@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#b8860b">
+<center>
+    <h1>
+               GET FORM
+    <form action="./add" method="get" >
+        
+            Enter First Number:<input type="text" name="t1"><br>
+            Enter Second Number:<input type="text" name="t2"><br>
+            <input type="submit" value="add"><br>
+    </form>
+    
+                 POST FORM
+      <form action="./add"  method="post">
+          {%csrf_token%}
+        
+            Enter First Number:<input type="text" name="t1"><br>
+            Enter Second Number:<input type="text" name="t2"><br>
+            <input type="submit" value="add">
+    </form>
+    </h1>
+        
+</center>
+
+</body>
+</html>
